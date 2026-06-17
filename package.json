@@ -1,0 +1,19 @@
+{
+  "name": "game-boost-platform",
+  "version": "1.0.0",
+  "description": "游戏陪玩点单全栈系统",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client-boss && npm install && cd ../client-pro && npm install && cd ../admin && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:boss": "cd client-boss && npm run dev",
+    "dev:pro": "cd client-pro && npm run dev",
+    "dev:admin": "cd admin && npm run dev",
+    "build:all": "cd server && npm run build && cd ../client-boss && npm run build && cd ../client-pro && npm run build && cd ../admin && npm run build",
+    "start:server": "cd server && npm start",
+    "db:init": "cd server && npm run db:init"
+  },
+  "keywords": ["game", "boost", "platform"],
+  "author": "",
+  "license": "MIT"
+}
